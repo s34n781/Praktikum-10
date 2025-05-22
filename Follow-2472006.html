@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./follow.css">
+    <script src="./jquery.min.js"></script>
+</head>
+<body>
+    <table cellspacing="0">
+        <tbody>
+            <tr>
+                <td id="fin" colspan="6">
+                    <h1>FINISH</h1>
+                </td>
+            </tr>
+            <tr>
+                <td class="path border-r">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="path border-r">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="path border-b">&nbsp;</td>
+                <td class="path border-h">&nbsp;</td>
+                <td class="path corner-r">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="block">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+                <td class="path border-v">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="block">&nbsp;</td>
+                <td class="block">&nbsp;</td>
+                <td class="path corner-l">&nbsp;</td>
+                <td class="path border-h">&nbsp;</td>
+                <td class="path border-h">&nbsp;</td>
+                <td class="path corner-r">&nbsp;</td>
+            </tr>
+            <tr>
+                <td id="start" colspan="6">
+                    <h1>START</h1>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function(){
+            $('#start').hover(function(){
+                $('#start').css('background-color','blue');
+            });
+            $('#start').on('mouseout', function () {
+                $('#start').css('background-color','white');
+            });
+            $('#fin').hover(function(){
+                $('#fin').css('background-color','yellow');
+            });
+            $('#fin').on('mouseout', function () {
+                $('#fin').css('background-color','white');
+            });
+            $('.path').hover(function(){
+                $('.path').css('background-color','green');
+            });
+            $('.path').on('mouseout', function () {
+                $('.path').css('background-color','white');
+            });
+            $('.block').hover(function(){
+                $('.block').css('background-color','red');
+            });
+            $('.block').on('mouseout', function(){
+                $('.block').css('background-color','grey');
+                confirm('you lose!')
+            });
+        })
+    </script>
+</body>
+</html>

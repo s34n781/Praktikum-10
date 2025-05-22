@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./random.css">
+    <script src="./jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="random-box"></div>
+    </div>
+
+    <script>
+        $(document).ready(function animasi(){
+            l = Math.random()*700;
+            t = Math.random()*500;
+            $('#random-box').fadeOut(1000);
+            $('#random-box').animate({top:t,left:l},'fast');
+            $('#random-box').fadeIn(1000);
+            setTimeout(animasi, 2000);
+        })
+    </script>
+</body>
+</html>
