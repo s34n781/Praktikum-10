@@ -17,44 +17,44 @@
                 </td>
             </tr>
             <tr>
-                <td class="path border-r">&nbsp;</td>
-                <td class="block">&nbsp;</td>
-                <td class="block">&nbsp;</td>
-                <td class="block">&nbsp;</td>
-                <td class="block">&nbsp;</td>
-                <td class="block">&nbsp;</td>
+                <td class="path border-r" id="p10">&nbsp;</td>
+                <td class="block" id="b20">&nbsp;</td>
+                <td class="block" id="b19">&nbsp;</td>
+                <td class="block" id="b18">&nbsp;</td>
+                <td class="block" id="b17">&nbsp;</td>
+                <td class="block" id="b16">&nbsp;</td>
             </tr>
             <tr>
-                <td class="path border-r">&nbsp;</td>
-                <td class="block">&nbsp;</td>
-                <td class="block">&nbsp;</td>
-                <td class="block">&nbsp;</td>
-                <td class="block">&nbsp;</td>
-                <td class="block">&nbsp;</td>
+                <td class="path border-r" id="p9">&nbsp;</td>
+                <td class="block" id="b15">&nbsp;</td>
+                <td class="block" id="b14">&nbsp;</td>
+                <td class="block" id="b13">&nbsp;</td>
+                <td class="block" id="b12">&nbsp;</td>
+                <td class="block" id="b11">&nbsp;</td>
             </tr>
             <tr>
-                <td class="path border-b">&nbsp;</td>
-                <td class="path border-h">&nbsp;</td>
-                <td class="path corner-r">&nbsp;</td>
-                <td class="block">&nbsp;</td>
-                <td class="block">&nbsp;</td>
-                <td class="block">&nbsp;</td>
+                <td class="path border-b" id="p8">&nbsp;</td>
+                <td class="path border-h" id="p7">&nbsp;</td>
+                <td class="path corner-r" id="p6">&nbsp;</td>
+                <td class="block" id="b10">&nbsp;</td>
+                <td class="block" id="b9">&nbsp;</td>
+                <td class="block" id="b8">&nbsp;</td>
             </tr>
             <tr>
-                <td class="block">&nbsp;</td>
-                <td class="block">&nbsp;</td>
-                <td class="path border-v">&nbsp;</td>
-                <td class="block">&nbsp;</td>
-                <td class="block">&nbsp;</td>
-                <td class="block">&nbsp;</td>
+                <td class="block" id="b7">&nbsp;</td>
+                <td class="block" id="b6">&nbsp;</td>
+                <td class="path border-v" id="p5">&nbsp;</td>
+                <td class="block" id="b5">&nbsp;</td>
+                <td class="block" id="b4">&nbsp;</td>
+                <td class="block" id="b3">&nbsp;</td>
             </tr>
             <tr>
-                <td class="block">&nbsp;</td>
-                <td class="block">&nbsp;</td>
-                <td class="path corner-l">&nbsp;</td>
-                <td class="path border-h">&nbsp;</td>
-                <td class="path border-h">&nbsp;</td>
-                <td class="path corner-r">&nbsp;</td>
+                <td class="block" id="b2">&nbsp;</td>
+                <td class="block" id="b1">&nbsp;</td>
+                <td class="path corner-l" id="p4">&nbsp;</td>
+                <td class="path border-h" id="p3">&nbsp;</td>
+                <td class="path border-h" id="p2">&nbsp;</td>
+                <td class="path corner-r" id="p1">&nbsp;</td>
             </tr>
             <tr>
                 <td id="start" colspan="6">
@@ -67,25 +67,110 @@
     <script>
         $(document).ready(function(){
             $('#start').hover(function(){
-                $('#start').css('background-color','blue');
+                $('#start').css('background-color','gold');
             });
             $('#start').on('mouseout', function () {
                 $('#start').css('background-color','white');
             });
             $('#fin').hover(function(){
-                $('#fin').css('background-color','yellow');
+                $('#fin').css('background-color','#FFCC45');
             });
             $('#fin').on('mouseout', function () {
                 $('#fin').css('background-color','white');
+                confirm('congrats!')
             });
-            $('.path').hover(function(){
-                $('.path').css('background-color','green');
+            $('#p1').hover(function(){
+                $('#p1').css('background-color','#99ED4B');
+            });
+            $('#p2').hover(function(){
+                $('#p2').css('background-color','#99ED4B');
+            });
+            $('#p3').hover(function(){
+                $('#p3').css('background-color','#99ED4B');
+            });
+            $('#p4').hover(function(){
+                $('#p4').css('background-color','#99ED4B');
+            });
+            $('#p5').hover(function(){
+                $('#p5').css('background-color','#99ED4B');
+            });
+            $('#p6').hover(function(){
+                $('#p6').css('background-color','#99ED4B');
+            });
+            $('#p7').hover(function(){
+                $('#p7').css('background-color','#99ED4B');
+            });
+            $('#p8').hover(function(){
+                $('#p8').css('background-color','#99ED4B');
+            });
+            $('#p9').hover(function(){
+                $('#p9').css('background-color','#99ED4B');
+            });
+            $('#p10').hover(function(){
+                $('#p10').css('background-color','#99ED4B');
             });
             $('.path').on('mouseout', function () {
                 $('.path').css('background-color','white');
             });
-            $('.block').hover(function(){
-                $('.block').css('background-color','red');
+            $('#b1').hover(function(){
+                $('#b1').css('background-color','red');
+            });
+            $('#b2').hover(function(){
+                $('#b2').css('background-color','red');
+            });
+            $('#b3').hover(function(){
+                $('#b3').css('background-color','red');
+            });
+            $('#b4').hover(function(){
+                $('#b4').css('background-color','red');
+            });
+            $('#b5').hover(function(){
+                $('#b5').css('background-color','red');
+            });
+            $('#b6').hover(function(){
+                $('#b6').css('background-color','red');
+            });
+            $('#b7').hover(function(){
+                $('#b7').css('background-color','red');
+            });
+            $('#b8').hover(function(){
+                $('#b8').css('background-color','red');
+            });
+            $('#b9').hover(function(){
+                $('#b9').css('background-color','red');
+            });
+            $('#b10').hover(function(){
+                $('#b10').css('background-color','red');
+            });
+            $('#b11').hover(function(){
+                $('#b11').css('background-color','red');
+            });
+            $('#b12').hover(function(){
+                $('#b12').css('background-color','red');
+            });
+            $('#b13').hover(function(){
+                $('#b13').css('background-color','red');
+            });
+            $('#b14').hover(function(){
+                $('#b14').css('background-color','red');
+            });
+            $('#b15').hover(function(){
+                $('#b15').css('background-color','red');
+            });
+            $('#b16').hover(function(){
+                $('#b16').css('background-color','red');
+            });
+            $('#b17').hover(function(){
+                $('#b17').css('background-color','red');
+            });
+            $('#b18').hover(function(){
+                $('#b18').css('background-color','red');
+            });
+            $('#b19').hover(function(){
+                $('#b19').css('background-color','red');
+            });
+            $('#b20').hover(function(){
+                $('#b20').css('background-color','red');
             });
             $('.block').on('mouseout', function(){
                 $('.block').css('background-color','grey');
